@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f629f82f-d10e-4568-a08e-7d907f8b8d7a" name="Changes" comment="deleted jobs_title.csv file">
-      <change afterPath="$PROJECT_DIR$/config.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-    </list>
+    <list default="true" id="f629f82f-d10e-4568-a08e-7d907f8b8d7a" name="Changes" comment="added config file" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -136,12 +132,29 @@
       <option name="project" value="LOCAL" />
       <updated>1738583895813</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="added config file">
+      <option name="closed" value="true" />
+      <created>1738586582263</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1738586582263</updated>
+    </task>
+    <task id="LOCAL-00009" summary="added config file">
+      <option name="closed" value="true" />
+      <created>1738586626699</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1738586626699</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="created new repo" />
     <MESSAGE value="deleted jobs_title.csv file" />
-    <option name="LAST_COMMIT_MESSAGE" value="deleted jobs_title.csv file" />
+    <MESSAGE value="added config file" />
+    <option name="LAST_COMMIT_MESSAGE" value="added config file" />
   </component>
 </project>

@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f629f82f-d10e-4568-a08e-7d907f8b8d7a" name="Changes" comment="created new repo">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="f629f82f-d10e-4568-a08e-7d907f8b8d7a" name="Changes" comment="deleted jobs_title.csv file">
+      <change beforePath="$PROJECT_DIR$/demo.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,18 +22,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "SaurabhAsmt"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;SaurabhAsmt&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/SaurabhAsmt/Selenium_Project.git",
-    "accountId": "1d8ed667-95df-48b2-aa71-aac45b82976b"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/SaurabhAsmt/Selenium_Project.git&quot;,
+    &quot;accountId&quot;: &quot;1d8ed667-95df-48b2-aa71-aac45b82976b&quot;
   }
-}]]></component>
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 7
 }</component>
@@ -105,11 +105,28 @@
       <option name="project" value="LOCAL" />
       <updated>1738570693622</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="deleted jobs_title.csv file">
+      <option name="closed" value="true" />
+      <created>1738583212779</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1738583212779</updated>
+    </task>
+    <task id="LOCAL-00006" summary="deleted jobs_title.csv file">
+      <option name="closed" value="true" />
+      <created>1738583287871</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1738583287871</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="created new repo" />
-    <option name="LAST_COMMIT_MESSAGE" value="created new repo" />
+    <MESSAGE value="deleted jobs_title.csv file" />
+    <option name="LAST_COMMIT_MESSAGE" value="deleted jobs_title.csv file" />
   </component>
 </project>

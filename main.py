@@ -41,7 +41,7 @@ def scrape_jobs():
 
         # Loop over the 7 pages.
         for page in range(1, PAGES_TO_SCRAPE+1):
-            print(f"Scraping page {page}...")
+            print(f"scraping page {page}...")
 
             # Wait until the job title and job location elements are present
             wait.until(EC.presence_of_all_elements_located((By.CSS_SELECTOR, JOB_TITLE_SELECTOR)))

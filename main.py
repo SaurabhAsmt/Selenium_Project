@@ -5,6 +5,23 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 import time
 import csv
+import json
+
+with open("config.json", "r") as config_file:
+    config = json.load(config_file)
+
+# Read settings
+URL = config["settings"]["url"]
+HEADLESS = config["settings"]["headless"]
+TIMEOUT = config["settings"]["timeout"]
+PAGES_TO_SCRAPE = config["settings"]["pages_to_scrape"]
+CSV_FILENAME = config["settings"]["csv_filename"]
+
+# Read selectors
+JOB_TITLE_SELECTOR = config["selectors"]["job_title"]
+JOB_LOCATION_SELECTOR = config["selectors"]["job_location"]
+NEXT_BUTTON_SELECTOR = config["selectors"]["next_button"]
+
 
 def scrape_jobs():
     # Disabling the Automation Indicator WebDriver Flags
@@ -19,27 +36,26 @@ def scrape_jobs():
 
     try:
         # Open the career site
-        url = "https://trafigura.wd3.myworkdayjobs.com/TrafiguraCareerSite"
-        driver.get(url)
+        driver.get(URL)
 
         # Wait for the page to load job titles and job locations
         wait = WebDriverWait(driver, 15)
         all_jobs = []
 
         # Loop over the 7 pages.
-        for page in range(1, 8):
+        for page in range(1, PAGES_TO_SCRAPE+1):
             print(f"Scraping page {page}...")
 
             # Wait until the job title and job location elements are present
-            wait.until(EC.presence_of_all_elements_located((By.CSS_SELECTOR, '[data-automation-id="jobTitle"]')))
-            wait.until(EC.presence_of_all_elements_located((By.CSS_SELECTOR, '.css-129m7dg')))
+            wait.until(EC.presence_of_all_elements_located((By.CSS_SELECTOR, JOB_TITLE_SELECTOR)))
+            # wait.until(EC.presence_of_all_elements_located((By.CSS_SELECTOR, '.css-129m7dg')))
 
             # Additional pause to allow dynamic content to fully load.
             time.sleep(3)
 
             # Find all job title and job location elements.
-            job_title_elements = driver.find_elements(By.CSS_SELECTOR, '[data-automation-id="jobTitle"]')
-            job_location_elements = driver.find_elements(By.CSS_SELECTOR, 'div.css-248241 > div > div > dl > dd.css-129m7dg')
+            job_title_elements = driver.find_elements(By.CSS_SELECTOR, JOB_TITLE_SELECTOR)
+            job_location_elements = driver.find_elements(By.CSS_SELECTOR, JOB_LOCATION_SELECTOR)
 
             # Combine the job title and location data.
             # (Assuming that both lists are in sync, we iterate over the minimum count.)
@@ -60,7 +76,7 @@ def scrape_jobs():
                 break #exits the loop
 
             # Locate the next button and click it.
-            next_button = wait.until(EC.element_to_be_clickable((By.CSS_SELECTOR, '.wd-icon-chevron-right-small')))
+            next_button = wait.until(EC.element_to_be_clickable((By.CSS_SELECTOR, NEXT_BUTTON_SELECTOR)))
             next_button.click()
 
             # Wait a short moment for the new results to load.

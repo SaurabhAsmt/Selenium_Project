@@ -1,0 +1,14 @@
+{
+  "settings": {
+    "url": "https://trafigura.wd3.myworkdayjobs.com/TrafiguraCareerSite",
+    "headless": true,
+    "timeout": 15,
+    "pages_to_scrape": 7,
+    "csv_filename": "/home/yourusername/jobs.csv"
+  },
+  "selectors": {
+    "job_title": "[data-automation-id='jobTitle']",
+    "job_location": "div.css-248241 > div > div > dl > dd.css-129m7dg",
+    "next_button": ".wd-icon-chevron-right-small"
+  }
+}

@@ -57,7 +57,7 @@ def scrape_jobs():
 
             # If this is the last page, break out of the loop.
             if page == 7:
-                break
+                break #exits the loop
 
             # Locate the next button and click it.
             next_button = wait.until(EC.element_to_be_clickable((By.CSS_SELECTOR, '.wd-icon-chevron-right-small')))

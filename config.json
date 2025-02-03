@@ -4,7 +4,7 @@
     "headless": true,
     "timeout": 15,
     "pages_to_scrape": 7,
-    "csv_filename": "/home/yourusername/jobs.csv"
+    "csv_filename": "/home/username/jobs.csv"
   },
   "selectors": {
     "job_title": "[data-automation-id='jobTitle']",
